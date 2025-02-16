@@ -1,0 +1,206 @@
+
+footer, footer * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Footer Main Styling */
+footer {
+    width: 100%;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 80px 5% 30px;
+    border-top-left-radius: 80px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 15vh;
+}
+
+/* Footer Row (Flexbox for Alignment) */
+footer .row {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Footer Columns */
+footer .col {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+/* Adjusting Column Widths */
+footer .col:nth-child(2),
+footer .col:nth-child(3) {
+    flex: 1;
+    min-width: 150px;
+}
+
+/* Logo */
+footer .logo {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+/* Footer Heading */
+footer .col h3 {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* Email */
+footer .email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Footer Links */
+footer ul {
+    padding: 0;
+}
+
+footer ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Subscription Form */
+footer form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+}
+
+footer form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 14px;
+}
+
+footer form button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+footer form button i {
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* Social Icons */
+footer .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+footer .social-icons > * {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+footer .social-icons > *:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Bottom */
+footer hr {
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+footer .copyright {
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Underline Animation */
+footer .underline {
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+footer .underline span {
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 3s linear infinite;
+}
+
+/* Animation */
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer {
+        padding: 60px 5% 20px;
+        font-size: 13px;
+    }
+
+    footer .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .col {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    footer .social-icons {
+        justify-content: center;
+    }
+
+    footer hr {
+        width: 100%;
+    }
+}
