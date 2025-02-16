@@ -2,7 +2,7 @@
 
 Shopkart is a fully functional **MERN stack** e-commerce platform with features like user authentication, product management, cart functionality, payment integration, and order tracking.
 
-Live Demo: https://shopkart-7kq2.onrender.com
+Live Demo: https://shopkart-zk8c.onrender.com
 
 ## 🚀 Features
 
