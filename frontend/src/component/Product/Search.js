@@ -22,7 +22,7 @@ const Search = (props) => {
 
     return (
         <Fragment>
-            <MetaData title="SEARCH-PRODUCT ShopKart" />
+            <MetaData title="SEARCH-PRODUCT CrabKart" />
             <form className='searchBox' onSubmit={searchSubmitHandler}>
                 <input
                     type="text"
